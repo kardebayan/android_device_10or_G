@@ -99,8 +99,6 @@ on charger
     chown system system /sys/class/leds/red/brightness
     chown system system /sys/class/leds/green/brightness
 
-    start servicemanager
-    start hwservicemanager
     start light-hal-2-0
 
 #ifdef VENDOR_EDIT
