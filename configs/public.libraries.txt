@@ -1,2 +1,4 @@
 libMcClient.so
 libMcRegistry.so
+libprotobuf-cpp-full.so
+libprotobuf-cpp-lite.so
