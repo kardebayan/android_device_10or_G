@@ -4,5 +4,5 @@ allow domain gpu_device:chr_file rw_file_perms;
 allow domain gpu_device:dir search;
 allow domain graphics_device:chr_file rw_file_perms;
 allow domain graphics_device:dir search;
-allow domain proc_ged:file rw_file_perms;
+allow { domain -recovery_persist -recovery_refresh -logpersist -logd } proc_ged:file rw_file_perms;
 allowxperm domain proc_ged:file ioctl { 0x6700-0x67ff };
