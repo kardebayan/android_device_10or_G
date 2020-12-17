@@ -4,11 +4,5 @@
     "repository":  "LineageOS/android_hardware_mediatek",
     "target_path": "hardware/mediatek",
     "branch":      "lineage-17.1"
-  },
-  {
-    "remote":      "gitlab",
-    "repository":  "PixelExperience/packages_apps_PixelLiveWallpaper",
-    "target_path": "packages/apps/PixelLiveWallpaper",
-    "branch": "ten"
   }
 ]
