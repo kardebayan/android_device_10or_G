@@ -83,6 +83,9 @@ BOARD_MKBOOTIMG_ARGS := --kernel_offset $(BOARD_KERNEL_OFFSET) --ramdisk_offset 
 TARGET_KERNEL_SOURCE := kernel/oppo/CPH1859
 TARGET_KERNEL_CONFIG := oppo6771_17065_defconfig
 
+# RIL
+ENABLE_VENDOR_RIL_SERVICE := true
+
 # Security patch level
 VENDOR_SECURITY_PATCH := 2020-05-05
 

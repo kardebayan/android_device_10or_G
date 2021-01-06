@@ -22,7 +22,6 @@
 # LCD density
 ro.sf.lcd_density=480
 
-
 # Cam2Api
 persist.camera.HAL3.enabled=1
 
@@ -63,8 +62,6 @@ sys.ipo.pwrdncap=2
 ro.sys.usb.storage.type=mtp,adb
 
 # Ril
-rild.libpath=mtk-ril.so
-rild.libargs=-d /dev/ttyC0
 rild.mark_switchuser=0
 ril.read.imsi=1
 
