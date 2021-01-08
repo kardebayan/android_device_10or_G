@@ -1,16 +1,26 @@
 [
-    {
+  {
     "remote":      "github",
     "repository":  "LineageOS/android_hardware_mediatek",
     "target_path": "hardware/mediatek",
     "branch":      "lineage-17.1"
-  }
-]
-[
-    {
-    "remote":      "github",
-    "repository":  "CPH1859/prebuilt_clang-6.0.2",
-    "target_path": "prebuilts/clang/host/linux-x86",
-    "branch":      "6.0.2"
+  },
+  {
+    "remote"     : "github",
+    "repository" : "CPH1859/android_kernel_oppo_mt6771",
+    "target_path": "kernel/oppo/mt6771"
+    "branch"     : "alps"
+  },
+  {
+    "remote"     : "github",
+    "repository" : "CPH1859/proprietary_vendor_oppo_CPH1859",
+    "target_path": "vendor/oppo/CPH1859"
+    "branch"     : "lineage-18.0"
+  },
+  {
+    "remote"     : "github",
+    "repository" : "CPH1859/prebuilt_clang-6.0.2",
+    "target_path": "prebuilts/clang/host/linux-x86/clang-r316199",
+    "branch"     : "6.0.2"
   }
 ]
