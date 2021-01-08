@@ -6,3 +6,11 @@
     "branch":      "lineage-17.1"
   }
 ]
+[
+    {
+    "remote":      "github",
+    "repository":  "CPH1859/prebuilt_clang-6.0.2",
+    "target_path": "prebuilts/clang/host/linux-x86",
+    "branch":      "6.0.2"
+  }
+]
