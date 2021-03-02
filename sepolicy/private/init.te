@@ -2,3 +2,7 @@
 domain_trans(init, rootfs, adbd)
 
 allow vendor_init vendor_init:capability { sys_module };
+allow init rootfs:lnk_file setattr;
+
+dontaudit init kernel:security setcheckreqprot;
+dontaudit init kernel:system module_request;
