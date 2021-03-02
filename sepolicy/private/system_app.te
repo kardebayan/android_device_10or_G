@@ -1,5 +1,2 @@
 # Purpose : system_app need vendor_default_prop
 get_prop(system_app, vendor_default_prop)
-
-allow system_app proc_ged:file { ioctl };
-#allow system_app apex_service:service_manager { find };

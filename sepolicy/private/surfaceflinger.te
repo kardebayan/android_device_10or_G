@@ -1,3 +1,0 @@
-# Purpose: Allow to access ged for gralloc_extra functions
-allow surfaceflinger proc_ged:file rw_file_perms;
-#allowxperm surfaceflinger proc_ged:file ioctl { proc_ged_ioctls };

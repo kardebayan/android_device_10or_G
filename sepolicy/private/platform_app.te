@@ -1,1 +1,0 @@
-allow platform_app proc_ged:file { ioctl };
