@@ -41,9 +41,6 @@
 
 # Modem
 /dev/block/platform/bootdevice/by-name/md1img    /md1img      emmc    defaults                                                        defaults
-/dev/block/platform/bootdevice/by-name/md1dsp    /md1dsp      emmc    defaults                                                        defaults
-/dev/block/platform/bootdevice/by-name/md1arm7   /md1arm7     emmc    defaults                                                        defaults
-/dev/block/platform/bootdevice/by-name/md3img    /md3img      emmc    defaults                                                        defaults
 
 # Non-Volatile (RAM | DATA | CFG)
 /dev/block/platform/bootdevice/by-name/nvram     /nvram       emmc    defaults                                                        defaults
