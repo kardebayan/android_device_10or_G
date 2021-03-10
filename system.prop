@@ -104,7 +104,3 @@ persist.dbg.wfc_avail_ovr=1
 
 # SurfaceFlinger
 debug.sf.latch_unsignaled=1
-
-# Media
-media.stagefright.thumbnail.prefer_hw_codecs=true
-debug.stagefright.ccodec=0
