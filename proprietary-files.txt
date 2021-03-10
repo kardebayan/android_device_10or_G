@@ -1,7 +1,20 @@
+# Engineering Mode
+-priv-app/EngineerMode/EngineerMode.apk
+lib/libem_support_jni.so
+lib64/libem_support_jni.so
+
+# HotwordEnrollment
+-priv-app/HotwordEnrollmentOKGoogleCORTEXM4/HotwordEnrollmentOKGoogleCORTEXM4.apk
+
+# MTK-IMS
+-priv-app/ImsService/ImsService.apk
+
+# Offline Charging
 bin/kpoc_charger
 etc/init/kpoc_charger.rc
 lib/libshowlogo.so
 lib/libsysenv_system.so
 lib64/libsysenv_system.so
-vendor/lib64/libmtk-ril.so:lib64/libmtk-ril.so
 
+# RIL
+vendor/lib64/libmtk-ril.so:lib64/libmtk-ril.so
