@@ -18,52 +18,8 @@ service kpoc_charger /system/bin/kpoc_charger
     class charger
 
 
-service boot_lc /system/bin/logcat -db all -D -f /cache/boot_lc_full.log
-    class main
-    user root
-    group root system
-    disabled
-    oneshot
-
-service boot_lc_crash /system/bin/logcat -db crash -D -f /cache/boot_lc_crash.log
-    class main
-    user root
-    group root system
-    disabled
-    oneshot
-
-service boot_lc_kernel /system/bin/logcat -db kernel -D -f /cache/boot_lc_kernel.log
-    class main
-    user root
-    group root system
-    disabled
-    oneshot
-
-on fs
-
-    # debug boot process
-    rm /cache/boot_lc_full.log
-    rm /cache/boot_lc_crash.log
-    rm /cache/boot_lc_kernel.log
-    start boot_lc
-    start boot_lc_kernel
-    start boot_lc_crash
-
 on post-fs
 	mount none /system/etc/usb_audio_policy_configuration.xml /vendor/etc/usb_audio_policy_configuration.xml bind
-
-on post-fs-boot
-
-on property:sys.boot_completed=1
-    stop boot_lc
-    stop boot_lc_crash
-    stop boot_lc_kernel
-
-on property:dev.bootcomplete=1
-    stop boot_lc
-    stop boot_lc_crash
-    stop boot_lc_kernel
-
 
 on boot
 
