@@ -1,4 +1,4 @@
-# Pretty much every graphics process need to access proc_ded and (gpu|graphics)_device
+# Pretty much every graphics process need to access proc_ged and (gpu|graphics)_device
 # TODO: These rules are pretty permissive, reconsider when enforcing
 allow domain gpu_device:chr_file rw_file_perms;
 allow domain gpu_device:dir search;
