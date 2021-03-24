@@ -1,3 +1,4 @@
 type debugfs_ion, fs_type, debugfs_type;
+type debugfs_ion_mm_heap, fs_type, debugfs_type;
 type proc_ged, fs_type, proc_type;
 
