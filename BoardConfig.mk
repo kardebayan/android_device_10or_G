@@ -104,6 +104,9 @@ TARGET_USERIMAGES_USE_EXT4 := true
 TARGET_USERIMAGES_SPARSE_EXT_DISABLED := false
 TARGET_USES_MKE2FS := true
 
+TARGET_COPY_OUT_PRODUCT := system/product
+TARGET_COPY_OUT_VENDOR := vendor
+
 # Recovery
 TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab.mt6771
 TARGET_RECOVERY_PIXEL_FORMAT := "RGBX_8888"
@@ -117,6 +120,9 @@ TARGET_ENABLE_MEDIADRM_64 := true
 TARGET_TAP_TO_WAKE_NODE := "/proc/touchpanel/double_tap_enable"
 TARGET_USES_INTERACTION_BOOST := true
 
+# Properties
+TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
+
 # Brightness Path
 BACKLIGHT_PATH := /sys/class/leds/lcd-backlight/brightness
 
@@ -128,8 +134,6 @@ DEVICE_FRAMEWORK_MANIFEST_FILE := $(DEVICE_PATH)/framework_manifest.xml
 # Network Routing
 TARGET_IGNORES_FTP_PPTP_CONNTRACK_FAILURE := true
 
-# Vndk
-BOARD_VNDK_VERSION := current
-TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
-BUILD_WITHOUT_VENDOR := true
-TARGET_COPY_OUT_PRODUCT := system/product
+# VNDK
+BOARD_VNDK_RUNTIME_DISABLE := true
+PRODUCT_VENDOR_MOVE_ENABLED := true
