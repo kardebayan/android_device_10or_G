@@ -1,6 +1,12 @@
 [
   {
-    "repository": "vendor_oppo_CPH1859",
+    "remote":      "github",
+    "repository":  "stormbreaker-project/kernel_oppo_CPH1859",
+    "target_path": "kernel/oppo/CPH1859",
+    "branch":      "alps-rebase"
+  },
+  {
+    "repository":  "vendor_oppo_CPH1859",
     "target_path": "vendor/oppo/CPH1859"
   }
 ]
