@@ -87,11 +87,29 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/misc/factory.ini:$(TARGET_COPY_OUT_SYSTEM)/etc/factory.ini \
     $(LOCAL_PATH)/misc/custom.conf:$(TARGET_COPY_OUT_SYSTEM)/etc/custom.conf
 
-# Init
+# Ramdisk
 PRODUCT_PACKAGES += \
+    engineer_vendor_shell.sh \
+    init.oppo.securetemplet.sh \
+    factory_init.connectivity.rc \
+    factory_init.project.rc \
+    factory_init.rc \
+    init.aee.rc \
+    init.ago.rc \
+    init.connectivity.rc \
+    init.modem.rc \
+    init.mt6771.rc \
+    init.mt6771.usb.rc \
+    init.oppo.reserve.rc \
+    init.project.rc \
+    init.sensor_1_0.rc \
+    meta_init.connectivity.rc \
+    meta_init.modem.rc \
+    meta_init.project.rc \
+    meta_init.rc \
+    multi_init.rc \
     fstab.mt6771 \
-    init.target.rc \
-    set_zram.sh
+    ueventd.mt6771.rc
 
 # DRM
 PRODUCT_PACKAGES += \
