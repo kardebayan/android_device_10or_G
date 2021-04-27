@@ -130,7 +130,6 @@ PRODUCT_PROPERTY_OVERRIDES +=  \
     ro.vendor.ap_info_monitor=0 \
     ro.vendor.app_resolution_tuner=1 \
     ro.vendor.camera3.zsl.default=140 \
-    ro.vendor.have_aee_feature=1 \
     ro.vendor.md_auto_setup_ims=1 \
     ro.vendor.md_log_memdump_wait=15 \
     ro.vendor.md_prop_ver=1 \

@@ -1990,11 +1990,6 @@ vendor/app/mcRegistry/090b0000000000000000000000000000.drbin
 vendor/app/mcRegistry/090b0000000000000000000000000000.tlbin
 vendor/app/mcRegistry/09140000000000000000000000000000.tlbin
 vendor/app/mcRegistry/09190000000000000000000000000000.tlbin
-vendor/bin/aeev
-vendor/bin/aee_aedv
-vendor/bin/aee_aedv64
-vendor/bin/aee_archivev
-vendor/bin/aee_dumpstatev
 vendor/bin/atcid
 vendor/bin/atci_service
 vendor/bin/audiocmdservice_atci
@@ -2058,7 +2053,6 @@ vendor/bin/wmt_loader
 vendor/bin/wmt_loopback
 vendor/data/misc/ProjectConfig.mk
 vendor/etc/.tp/.ht120.mtc
-vendor/etc/aee-config
 vendor/etc/agps_profiles_conf2.xml
 vendor/etc/ams_aal_config.xml
 vendor/etc/asd/class.tflite
@@ -2087,8 +2081,6 @@ vendor/etc/fstab.mt6771
 vendor/etc/fstb.cfg
 vendor/etc/fteh.cfg
 vendor/etc/gasryuv.model
-vendor/etc/init/aee_aedv.rc
-vendor/etc/init/aee_aedv64.rc
 vendor/etc/init/atcid.rc
 vendor/etc/init/atci_service.rc
 vendor/etc/init/audiocmdservice_atci.rc
