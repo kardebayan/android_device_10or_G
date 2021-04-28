@@ -639,21 +639,13 @@ vendor/lib64/vendor.mediatek.hardware.gnss@1.1.so
 vendor/bin/hw/android.hardware.gatekeeper@1.0-service
 vendor/etc/init/android.hardware.gatekeeper@1.0-service.rc
 vendor/lib/hw/android.hardware.gatekeeper@1.0-impl.so
-vendor/lib/hw/gatekeeper.default.so
-vendor/lib/hw/gatekeeper.mt6771.so
-vendor/lib/hw/gatekeeper.oppo6771_17065.so
 vendor/lib64/hw/android.hardware.gatekeeper@1.0-impl.so
-vendor/lib64/hw/gatekeeper.default.so
-vendor/lib64/hw/gatekeeper.mt6771.so
-vendor/lib64/hw/gatekeeper.oppo6771_17065.so
 
 # Graphics
 vendor/lib/egl/egl.cfg
 vendor/lib/egl/libGLES_mali.so
-vendor/lib/hw/vulkan.mt6771.so
 vendor/lib/libOpenCL.so
 vendor/lib64/egl/libGLES_mali.so
-vendor/lib64/hw/vulkan.mt6771.so
 vendor/lib64/libOpenCL.so
 
 # Health
@@ -667,16 +659,12 @@ vendor/bin/hw/vendor.mediatek.hardware.keymaster_attestation@1.1-service
 vendor/etc/init/android.hardware.keymaster@3.0-service.rc
 vendor/etc/init/vendor.mediatek.hardware.keymaster_attestation@1.1-service.rc
 vendor/lib/hw/android.hardware.keymaster@3.0-impl.so
-vendor/lib/hw/keystore.mt6771.so
-vendor/lib/hw/keystore.oppo6771_17065.so
 vendor/lib/hw/libMcTeeKeymaster.so
 vendor/lib/hw/vendor.mediatek.hardware.keymaster_attestation@1.1-impl.so
 vendor/lib/libkeymaster3device.so
 vendor/lib/vendor.mediatek.hardware.keymaster_attestation@1.0.so
 vendor/lib/vendor.mediatek.hardware.keymaster_attestation@1.1.so
 vendor/lib64/hw/android.hardware.keymaster@3.0-impl.so
-vendor/lib64/hw/keystore.mt6771.so
-vendor/lib64/hw/keystore.oppo6771_17065.so
 vendor/lib64/hw/libMcTeeKeymaster.so
 vendor/lib64/hw/vendor.mediatek.hardware.keymaster_attestation@1.1-impl.so
 vendor/lib64/libkeymaster3device.so
@@ -2077,7 +2065,6 @@ vendor/etc/ecc_list_OP18.xml
 vendor/etc/faceTpl0.rgb32
 vendor/etc/faceTpl1.rgb32
 vendor/etc/file112.wav
-vendor/etc/fstab.mt6771
 vendor/etc/fstb.cfg
 vendor/etc/fteh.cfg
 vendor/etc/gasryuv.model
@@ -2194,11 +2181,9 @@ vendor/etc/virtual-spn-conf-by-efgid1.xml
 vendor/etc/virtual-spn-conf-by-efpnn.xml
 vendor/etc/virtual-spn-conf-by-efspn.xml
 vendor/etc/virtual-spn-conf-by-imsi.xml
-vendor/fstab.enableswap
 vendor/lib/android.frameworks.faceservice@1.0.so
 vendor/lib/hw/dfps.mt6771.so
 vendor/lib/hw/flp.default.so
-vendor/lib/hw/kmsetkey.default.so
 vendor/lib/hw/kmsetkey.trustonic.so
 vendor/lib/hw/libMcGatekeeper.so
 vendor/lib/hw/libSoftGatekeeper.so
@@ -2332,7 +2317,6 @@ vendor/lib/s5k4h7_mipi_raw_IdxMgr.so
 vendor/lib/s5k4h7_mipi_raw_tuning.so
 vendor/lib64/hw/dfps.mt6771.so
 vendor/lib64/hw/flp.default.so
-vendor/lib64/hw/kmsetkey.default.so
 vendor/lib64/hw/kmsetkey.trustonic.so
 vendor/lib64/hw/libMcGatekeeper.so
 vendor/lib64/hw/libSoftGatekeeper.so
@@ -2498,11 +2482,6 @@ vendor/lib64/s5k4h7_mipi_raw_IdxMgr.so
 vendor/lib64/s5k4h7_mipi_raw_tuning.so
 vendor/lib64/vendor.trustonic.tee@1.0.so
 vendor/lib64/vendor.trustonic.teeregistry@1.0.so
-vendor/nvcfg
-vendor/nvdata
-vendor/persist
-vendor/protect_f
-vendor/protect_s
 vendor/res/images/lcd_test_00.png
 vendor/res/images/lcd_test_01.png
 vendor/res/images/lcd_test_02.png
