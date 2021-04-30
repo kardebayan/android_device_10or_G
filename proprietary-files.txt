@@ -1,3 +1,16 @@
+# Device proprietary files - from CPH1861EX_11_C.49, unless pinned
+
+# AEE
+vendor/lib/libdirect-coredump.so
+vendor/lib64/libdirect-coredump.so
+
+# AEE - from Note_11P-user 11 RP1A.200720.011 2101131254 release-keys
+vendor/lib/libaedv.so|68eb76e22650e6f7b09f6c1db32a72851445789f
+vendor/lib/libladder.so|b3161af9c1ae115b467ed6d210355348717145c8
+vendor/lib/libudf.so|0910236ff7b602a7ee4b6cf5472b5cff0d301f52
+vendor/lib64/libaedv.so|bd09673530e80f6cde27d91229b6df6394191053
+vendor/lib64/libladder.so|47ab171fde2026c25c0c63f0af9bfcee3fcd74a9
+vendor/lib64/libudf.so|00563b48abe3e19856133a87775363a9ef98c049
 
 # Audio
 vendor/etc/dirac/17065/diracmobile.config
@@ -2187,7 +2200,6 @@ vendor/lib/hw/flp.default.so
 vendor/lib/hw/kmsetkey.trustonic.so
 vendor/lib/hw/libMcGatekeeper.so
 vendor/lib/hw/libSoftGatekeeper.so
-vendor/lib/libaedv.so
 vendor/lib/libakm.so
 vendor/lib/libalipay_factory.so
 vendor/lib/libapmonitor_vendor.so
@@ -2217,7 +2229,6 @@ vendor/lib/libcurl-ss.so
 vendor/lib/libcurl_xcap_md.so
 vendor/lib/libcustom_nvram.so
 vendor/lib/libcvsd_mtk.so
-vendor/lib/libdirect-coredump.so
 vendor/lib/libdpframework.so
 vendor/lib/libDR.so
 vendor/lib/libffmpeg_omx.so
@@ -2245,7 +2256,6 @@ vendor/lib/libjpeg-alpha-oal_vendor.so
 vendor/lib/libjpeg-alpha_vendor.so
 vendor/lib/libJpgDecPipe.so
 vendor/lib/libJpgEncPipe.so
-vendor/lib/libladder.so
 vendor/lib/liblic_divx.so
 vendor/lib/libMcClient.so
 vendor/lib/libmhalImageCodec.so
@@ -2291,7 +2301,6 @@ vendor/lib/libTEECommon.so
 vendor/lib/libtextclassifier_hash.so
 vendor/lib/libtflite_mtk.so
 vendor/lib/libthha.so
-vendor/lib/libudf.so
 vendor/lib/libutinterface_md.so
 vendor/lib/libvc1dec_sa.ca7.so
 vendor/lib/libvcodecdrv.so
@@ -2337,7 +2346,6 @@ vendor/lib64/lib3a.n3d3a.so
 vendor/lib64/lib3DSlender.so
 vendor/lib64/libabfadp.so
 vendor/lib64/libacdk.so
-vendor/lib64/libaedv.so
 vendor/lib64/libakm.so
 vendor/lib64/libalipay_factory.so
 vendor/lib64/libapmonitor_vendor.so
@@ -2374,7 +2382,6 @@ vendor/lib64/libcvsd_mtk.so
 vendor/lib64/libdip_drv.so
 vendor/lib64/libdip_imem.so
 vendor/lib64/libdip_postproc.so
-vendor/lib64/libdirect-coredump.so
 vendor/lib64/libdnn_fd.so
 vendor/lib64/libdpframework.so
 vendor/lib64/libeffecthal.base.so
@@ -2411,7 +2418,6 @@ vendor/lib64/libjpeg-alpha_vendor.so
 vendor/lib64/libJpgEncPipe.so
 vendor/lib64/libkmsetkey.so
 vendor/lib64/libksensor.so
-vendor/lib64/libladder.so
 vendor/lib64/liblpcnr.so
 vendor/lib64/libMcClient.so
 vendor/lib64/libmfllcore.so
@@ -2460,7 +2466,6 @@ vendor/lib64/libtextclassifier_hash.so
 vendor/lib64/libtflite_mtk.so
 vendor/lib64/libthha.so
 vendor/lib64/libtrustonic_keybox_ca.so
-vendor/lib64/libudf.so
 vendor/lib64/libui_ext.so
 vendor/lib64/libutinterface_md.so
 vendor/lib64/libvcodec_oal.so
