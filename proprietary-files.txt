@@ -33,7 +33,6 @@ vendor/lib/libaudiocustparam_vendor.so
 vendor/lib/libaudiodcrflt_vendor.so
 vendor/lib/libaudiofmtconv.so
 vendor/lib/libaudioloudc.so
-vendor/lib/libaudioprimarydevicehalifclient.so
 vendor/lib/libaudiosetting.so
 vendor/lib/libaudiotoolkit_vendor.so
 vendor/lib/libaudio_engineer_test.so
@@ -50,7 +49,6 @@ vendor/lib64/libaudiocustparam_vendor.so
 vendor/lib64/libaudiodcrflt_vendor.so
 vendor/lib64/libaudiofmtconv.so
 vendor/lib64/libaudioloudc.so
-vendor/lib64/libaudioprimarydevicehalifclient.so
 vendor/lib64/libaudiosetting.so
 vendor/lib64/libaudiotoolkit_vendor.so
 vendor/lib64/libaudio_engineer_test.so
@@ -59,10 +57,6 @@ vendor/lib64/libtinycompress.so
 vendor/lib64/soundfx/libaudiopreprocessing.so
 
 # Audio-Hardware
-vendor/bin/hw/android.hardware.audio@4.0-service-mediatek
-vendor/etc/init/android.hardware.audio@4.0-service-mediatek.rc
-vendor/lib/hw/android.hardware.audio.effect@4.0-impl.so
-vendor/lib/hw/android.hardware.audio@4.0-impl-mediatek.so
 vendor/lib/hw/audio.primary.default.so
 vendor/lib/hw/audio.primary.mt6771.so
 vendor/lib/hw/audio.r_submix.default.so
@@ -70,9 +64,6 @@ vendor/lib/hw/audio.r_submix.mt6771.so
 vendor/lib/hw/audio.usb.default.so
 vendor/lib/hw/audio.usb.mt6771.so
 vendor/lib/hw/audio_policy.stub.so
-vendor/lib/vendor.mediatek.hardware.audio@4.1.so
-vendor/lib64/hw/android.hardware.audio.effect@4.0-impl.so
-vendor/lib64/hw/android.hardware.audio@4.0-impl-mediatek.so
 vendor/lib64/hw/audio.primary.default.so
 vendor/lib64/hw/audio.primary.mt6771.so
 vendor/lib64/hw/audio.r_submix.default.so
@@ -80,7 +71,16 @@ vendor/lib64/hw/audio.r_submix.mt6771.so
 vendor/lib64/hw/audio.usb.default.so
 vendor/lib64/hw/audio.usb.mt6771.so
 vendor/lib64/hw/audio_policy.stub.so
-vendor/lib64/vendor.mediatek.hardware.audio@4.1.so
+
+# Audio Hardware - from KF6J-user 11 RP1A.200720.011 210120V193 release-keys
+vendor/bin/hw/android.hardware.audio@5.0-service-mediatek|7d8173d321717056f1aad4ee5250cd23d0152780
+vendor/etc/init/android.hardware.audio@5.0-service-mediatek.rc|d2f25ca256ef25f6b98f38431d545fe671cf76b3
+vendor/lib/hw/android.hardware.audio@5.0-impl-mediatek.so|066d59c5ba973df968a4c8665a0c6e0f2355656b
+vendor/lib/vendor.mediatek.hardware.audio@5.1.so|8bf798ce812ea43cfc3595d64c47cd2bac3415f8
+vendor/lib/libaudioprimarydevicehalifclient.so|5d51ea04be6da3066c5e1fffa546b6dd8ee4cc75
+vendor/lib64/hw/android.hardware.audio@5.0-impl-mediatek.so|cfb593dbc25eec99692a454ba0da43d519b415cb
+vendor/lib64/vendor.mediatek.hardware.audio@5.1.so|08d6619179bbdff5a826d7b4c40ef44c2202cda6
+vendor/lib64/libaudioprimarydevicehalifclient.so|dd39a3f41983c423bb016cf316c4c803e3e179f1
 
 # Bluetooth
 vendor/bin/hw/android.hardware.bluetooth@1.0-service-mediatek
