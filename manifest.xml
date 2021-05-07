@@ -729,7 +729,4 @@
         </interface>
         <fqname>@1.0::ITeeRegistry/default</fqname>
     </hal>
-    <sepolicy>
-        <version>28.0</version>
-    </sepolicy>
 </manifest>
