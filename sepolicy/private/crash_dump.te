@@ -1,2 +1,0 @@
-get_prop(crash_dump, hwservicemanager_prop)
-get_prop(crash_dump, exported_wifi_prop)
