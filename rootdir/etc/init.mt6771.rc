@@ -170,6 +170,8 @@ on post-fs
     chown radio system /proc/freqhopping/status
     chown radio system /proc/freqhopping/userdef
 
+    mkdir /data/misc/logd 0700 logd log
+
 # change owner
     chown system system /proc/bootprof
     chmod 0664 /proc/bootprof
@@ -1331,3 +1333,8 @@ on property:ro.vendor.oppo.product.name=*
 on property:ro.vendor.oppo.product.device=*
     setprop ro.product.vendor.device ${ro.vendor.oppo.product.device}
 #endif
+
+service logcatd /system/bin/logcat -b all -f /data/misc/logd/logcat
+class main
+user root
+group root
