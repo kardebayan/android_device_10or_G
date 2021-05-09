@@ -5,7 +5,7 @@
 # Core Partitions
 /dev/block/platform/bootdevice/by-name/system    /system      ext4    ro                                                              wait,verify,recoveryonly,async_discard
 /dev/block/platform/bootdevice/by-name/vendor    /vendor      ext4    ro                                                              wait,verify,recoveryonly,async_discard
-/dev/block/platform/bootdevice/by-name/userdata  /data        ext4    noatime,nosuid,nodev,noauto_da_alloc,errors=panic,async_discard wait,check,formattable,quota,resize,reservedsize=128m,forcefdeorfbe=/dev/block/platform/bootdevice/by-name/metadata
+/dev/block/platform/bootdevice/by-name/userdata  /data        ext4    noatime,nosuid,nodev,noauto_da_alloc,errors=panic,async_discard wait,check,formattable,quota,resize,reservedsize=128m,encryptable=/dev/block/platform/bootdevice/by-name/metadata
 /dev/block/platform/bootdevice/by-name/cache     /cache       ext4    noatime,nosuid,nodev,noauto_da_alloc,async_discard              wait,check,formattable
 /dev/block/platform/bootdevice/by-name/recovery  /recovery    emmc    defaults                                                        defaults
 /dev/block/platform/bootdevice/by-name/boot      /boot        emmc    defaults                                                        defaults
