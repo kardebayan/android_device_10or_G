@@ -1,4 +1,4 @@
-# Device proprietary files - from CPH1861EX_11_C.49, unless pinned
+# Device proprietary files - from full_oppo6771_17065-user-9-PPR1.180610.011-eng.root.20200509.060522-release-keys, unless pinned
 
 # AEE
 vendor/lib/libdirect-coredump.so
@@ -695,11 +695,8 @@ vendor/lib64/hw/android.hardware.light@2.0-impl-mediatek.so
 vendor/lib64/hw/lights.mt6771.so
 
 # Listen
-vendor/lib/hw/android.hardware.soundtrigger@2.1-impl.so
 vendor/lib/hw/sound_trigger.primary.mt6771.so
 vendor/lib64/hw/sound_trigger.primary.mt6771.so
-
-# Media
 
 # Media-Hardware
 vendor/lib/libstagefrighthw.so
