@@ -54,6 +54,9 @@ PRODUCT_COPY_FILES += \
 
 # Camera
 PRODUCT_PACKAGES += \
+    android.hardware.camera.provider@2.4
+
+PRODUCT_PACKAGES += \
     Snap
 
 # Display
