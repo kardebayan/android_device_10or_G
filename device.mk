@@ -110,7 +110,7 @@ PRODUCT_PACKAGES += \
 # Overlay
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay \
-    $(LOCAL_PATH)/overlay-stag
+    $(LOCAL_PATH)/overlay-lineage
 
 # Public Libraries
 PRODUCT_COPY_FILES += \

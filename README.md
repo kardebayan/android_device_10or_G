@@ -1,4 +1,4 @@
-StagOS Device Tree for realme 1
+LineageOS Device Tree for realme 1
 ===========================================
 
 The realme 1 (codenamed _"CPH1859 / CPH1861"_ ) is a smartphone from realme.
