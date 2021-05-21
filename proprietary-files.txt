@@ -686,14 +686,6 @@ vendor/lib64/libkeystore-wifi-hidl.so
 vendor/lib64/vendor.mediatek.hardware.keymaster_attestation@1.0.so
 vendor/lib64/vendor.mediatek.hardware.keymaster_attestation@1.1.so
 
-# Lights
-vendor/bin/hw/android.hardware.light@2.0-service-mediatek
-vendor/etc/init/android.hardware.light@2.0-service-mediatek.rc
-vendor/lib/hw/android.hardware.light@2.0-impl-mediatek.so
-vendor/lib/hw/lights.mt6771.so
-vendor/lib64/hw/android.hardware.light@2.0-impl-mediatek.so
-vendor/lib64/hw/lights.mt6771.so
-
 # Listen
 vendor/lib/hw/sound_trigger.primary.mt6771.so
 vendor/lib64/hw/sound_trigger.primary.mt6771.so
