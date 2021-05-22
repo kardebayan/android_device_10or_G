@@ -113,6 +113,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libsensorndkbridge    
 
+# Shim
+PRODUCT_PACKAGES += \
+    libshim_nvram
+
 # Thermal
 PRODUCT_PACKAGES += \
     android.hardware.thermal@1.0-impl \
