@@ -39,7 +39,6 @@ vendor/lib/libaudio_engineer_test.so
 vendor/lib/libaudio_param_parser-vnd.so
 vendor/lib/libDiracAPI_SHARED.so
 vendor/lib/libtinycompress.so
-vendor/lib/soundfx/libaudiopreprocessing.so
 vendor/lib/soundfx/libdirac.so
 vendor/lib64/libaudiocompensationfilterc.so
 vendor/lib64/libaudiocompensationfilter_vendor.so
@@ -54,7 +53,6 @@ vendor/lib64/libaudiotoolkit_vendor.so
 vendor/lib64/libaudio_engineer_test.so
 vendor/lib64/libaudio_param_parser-vnd.so
 vendor/lib64/libtinycompress.so
-vendor/lib64/soundfx/libaudiopreprocessing.so
 
 # Audio-Hardware
 vendor/lib/hw/audio.primary.default.so
@@ -646,14 +644,6 @@ vendor/lib64/hw/gps.default.so
 vendor/lib64/hw/vendor.mediatek.hardware.gnss@1.1-impl.so
 vendor/lib64/vendor.mediatek.hardware.gnss@1.1.so
 
-# GPS-Hardware
-
-# Gatekeeper
-vendor/bin/hw/android.hardware.gatekeeper@1.0-service
-vendor/etc/init/android.hardware.gatekeeper@1.0-service.rc
-vendor/lib/hw/android.hardware.gatekeeper@1.0-impl.so
-vendor/lib64/hw/android.hardware.gatekeeper@1.0-impl.so
-
 # Graphics
 vendor/lib/egl/egl.cfg
 vendor/lib/egl/libGLES_mali.so
@@ -661,23 +651,14 @@ vendor/lib/libOpenCL.so
 vendor/lib64/egl/libGLES_mali.so
 vendor/lib64/libOpenCL.so
 
-# Health
-vendor/bin/hw/android.hardware.health@2.0-service
-vendor/bin/hw/android.hardware.health@2.0-service.override
-vendor/etc/init/android.hardware.health@2.0-service.rc
-
 # Keymaster
-vendor/bin/hw/android.hardware.keymaster@3.0-service
 vendor/bin/hw/vendor.mediatek.hardware.keymaster_attestation@1.1-service
-vendor/etc/init/android.hardware.keymaster@3.0-service.rc
 vendor/etc/init/vendor.mediatek.hardware.keymaster_attestation@1.1-service.rc
-vendor/lib/hw/android.hardware.keymaster@3.0-impl.so
 vendor/lib/hw/libMcTeeKeymaster.so
 vendor/lib/hw/vendor.mediatek.hardware.keymaster_attestation@1.1-impl.so
 vendor/lib/libkeymaster3device.so
 vendor/lib/vendor.mediatek.hardware.keymaster_attestation@1.0.so
 vendor/lib/vendor.mediatek.hardware.keymaster_attestation@1.1.so
-vendor/lib64/hw/android.hardware.keymaster@3.0-impl.so
 vendor/lib64/hw/libMcTeeKeymaster.so
 vendor/lib64/hw/vendor.mediatek.hardware.keymaster_attestation@1.1-impl.so
 vendor/lib64/libkeymaster3device.so
@@ -1882,19 +1863,11 @@ vendor/lib64/vendor.oppo.hardware.wifi.supplicant@1.0.so
 vendor/oppo/ck.fs
 vendor/oppo/recovery_rootcheck
 
-# Perf
-
-# Postprocessing
-
 # Power-Hardware
 vendor/lib/hw/power.default.so
 vendor/lib/hw/power.mt6771.so
 vendor/lib64/hw/power.default.so
 vendor/lib64/hw/power.mt6771.so
-
-# QMI
-
-# Radio
 
 # Sensors
 vendor/lib/libsensorndkbridge.so
