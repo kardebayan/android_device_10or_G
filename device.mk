@@ -56,6 +56,8 @@ PRODUCT_COPY_FILES += \
 
 # Camera
 PRODUCT_PACKAGES += \
+    android.hardware.camera.device@3.3 \
+    android.hardware.camera.device@3.4 \
     android.hardware.camera.provider@2.4
 
 PRODUCT_PACKAGES += \
@@ -76,6 +78,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.gatekeeper@1.0-service \
     android.hardware.gatekeeper@1.0-impl
+
+# GPS
+PRODUCT_PACKAGES += \
+    libandroid_net
 
 # Health
 PRODUCT_PACKAGES += \
@@ -104,6 +110,10 @@ DEVICE_PACKAGE_OVERLAYS += \
 # Public Libraries
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/public.libraries.txt:$(TARGET_COPY_OUT_VENDOR)/etc/public.libraries.txt
+
+# Radio
+PRODUCT_PACKAGES += \
+    android.hardware.radio@1.2
 
 # RenderScript
 PRODUCT_PACKAGES += \
