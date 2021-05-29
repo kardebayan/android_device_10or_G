@@ -55,20 +55,12 @@ vendor/lib64/libaudio_param_parser-vnd.so
 vendor/lib64/libtinycompress.so
 
 # Audio-Hardware
-vendor/lib/hw/audio.primary.default.so
 vendor/lib/hw/audio.primary.mt6771.so
-vendor/lib/hw/audio.r_submix.default.so
 vendor/lib/hw/audio.r_submix.mt6771.so
-vendor/lib/hw/audio.usb.default.so
 vendor/lib/hw/audio.usb.mt6771.so
-vendor/lib/hw/audio_policy.stub.so
-vendor/lib64/hw/audio.primary.default.so
 vendor/lib64/hw/audio.primary.mt6771.so
-vendor/lib64/hw/audio.r_submix.default.so
 vendor/lib64/hw/audio.r_submix.mt6771.so
-vendor/lib64/hw/audio.usb.default.so
 vendor/lib64/hw/audio.usb.mt6771.so
-vendor/lib64/hw/audio_policy.stub.so
 
 # Audio Hardware - from KF6J-user 11 RP1A.200720.011 210120V193 release-keys
 vendor/bin/hw/android.hardware.audio@5.0-service-mediatek|7d8173d321717056f1aad4ee5250cd23d0152780
