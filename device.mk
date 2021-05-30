@@ -20,7 +20,7 @@ PRODUCT_PACKAGES += \
     android.hardware.audio@5.0 \
     android.hardware.audio.effect@5.0-impl \
     android.hardware.soundtrigger@2.2-impl
-    
+
 PRODUCT_PACKAGES += \
     audio.a2dp.default \
     audio.primary.default \
@@ -65,6 +65,7 @@ PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.4
 
 PRODUCT_PACKAGES += \
+    liblz4 \
     Snap
 
 # Display
