@@ -341,10 +341,6 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
 PRODUCT_PACKAGES += \
     RcsService
 
-# ImsInit hack
-PRODUCT_PACKAGES += \
-    ImsInit
-
 PRODUCT_COPY_FILES += \
        $(LOCAL_PATH)/permissions/interfaces.xml:system/etc/permissions/interfaces.xml
 
