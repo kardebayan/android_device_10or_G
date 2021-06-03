@@ -1980,7 +1980,6 @@ vendor/bin/netdc
 vendor/bin/nvram_daemon
 vendor/bin/rpmbengclient_test
 vendor/bin/rttv
-vendor/bin/self-init
 vendor/bin/starter
 vendor/bin/stroke
 vendor/bin/TBaseDeviceBinding
