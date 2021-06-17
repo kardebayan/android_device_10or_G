@@ -124,7 +124,7 @@ TARGET_TAP_TO_WAKE_NODE := "/proc/touchpanel/double_tap_enable"
 TARGET_USES_INTERACTION_BOOST := true
 
 # SEPolicy
-include device/mediatek/sepolicy/sepolicy.mk
+include device/mediatek/sepolicy_vndr/SEPolicy.mk
 
 # Properties
 TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
