@@ -1,4 +1,4 @@
-# Device proprietary files - from full_oppo6771_17065-user-9-PPR1.180610.011-eng.root.20200509.060522-release-keys, unless pinned
+# Device proprietary files - from full_oppo6771_17065-user 9 PPR1.180610.011 eng.root.20200509.060522 release-keys, unless pinned
 
 # AEE
 vendor/lib/libdirect-coredump.so
@@ -54,7 +54,7 @@ vendor/lib64/libaudio_engineer_test.so
 vendor/lib64/libaudio_param_parser-vnd.so
 vendor/lib64/libtinycompress.so
 
-# Audio-Hardware - from from full_v7101o-user 10 QP1A.190711.020 q0mp1t1v1001bsp release-keys
+# Audio-Hardware - from full_v7101o-user 10 QP1A.190711.020 q0mp1t1v1001bsp release-keys
 vendor/lib/hw/audio.primary.mt6771.so|88451732bc3706d7da27d1a4a874b3d0a2d5ad9b
 vendor/lib/hw/audio.r_submix.mt6771.so|fdb5add833889e11f44d09b679257deb30bed27f
 vendor/lib/hw/audio.usb.mt6771.so|09a0a132ef22fbd3b1b4bcf052e636352702b08d
