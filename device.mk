@@ -306,10 +306,8 @@ PRODUCT_PACKAGES += \
     android.hardware.wifi@1.3
 
 PRODUCT_PACKAGES += \
-    hostapd \
-    libwpa_client \
-    libwifi-hal \
-    wpa_supplicant \
+    libkeystore-engine-wifi-hidl \
+    libkeystore-wifi-hidl \
     WifiOverlay
 
 PRODUCT_COPY_FILES += \

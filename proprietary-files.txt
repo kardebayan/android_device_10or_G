@@ -666,7 +666,6 @@ vendor/lib64/libstagefrighthw.so
 # Mediatek
 vendor/bin/hw/android.hardware.sensors@1.0-service-mediatek
 vendor/bin/hw/android.hardware.usb@1.1-service-mediatek
-vendor/bin/hw/android.hardware.wifi@1.0-service-mediatek
 vendor/bin/hw/vendor.mediatek.hardware.dfps@1.0-service
 vendor/bin/hw/vendor.mediatek.hardware.log@1.0-service
 vendor/bin/hw/vendor.mediatek.hardware.mms@1.1-service
@@ -676,7 +675,6 @@ vendor/bin/hw/vendor.mediatek.hardware.power@2.1-service
 vendor/bin/hw/vendor.mediatek.hardware.pq@2.2-service
 vendor/etc/init/android.hardware.sensors@1.0-service-mediatek.rc
 vendor/etc/init/android.hardware.usb@1.1-service-mediatek.rc
-vendor/etc/init/android.hardware.wifi@1.0-service-mediatek.rc
 vendor/etc/init/vendor.mediatek.hardware.dfps@1.0-service.rc
 vendor/etc/init/vendor.mediatek.hardware.log@1.0-service.rc
 vendor/etc/init/vendor.mediatek.hardware.mms@1.1-service.rc
@@ -848,9 +846,6 @@ vendor/lib64/vendor.mediatek.hardware.radio@3.7.so
 vendor/lib64/vendor.mediatek.hardware.radio@3.8.so
 vendor/lib64/vendor.mediatek.hardware.radio@3.9.so
 vendor/lib64/vendor.mediatek.hardware.videotelephony@1.0.so
-vendor/lib64/vendor.mediatek.hardware.wifi.hostapd@2.0.so
-vendor/lib64/vendor.mediatek.hardware.wifi.supplicant@2.0.so
-vendor/lib64/vendor.mediatek.hardware.wifi.supplicant@2.1.so
 
 # Neural-networks
 vendor/bin/hw/android.hardware.neuralnetworks@1.1-service-apunn
@@ -1847,7 +1842,6 @@ vendor/lib64/vendor.oppo.hardware.commondcs@1.0.so
 vendor/lib64/vendor.oppo.hardware.cryptoeng@1.0.so
 vendor/lib64/vendor.oppo.hardware.ktv@1.0.so
 vendor/lib64/vendor.oppo.hardware.oiface@1.0.so
-vendor/lib64/vendor.oppo.hardware.wifi.supplicant@1.0.so
 vendor/oppo/ck.fs
 vendor/oppo/recovery_rootcheck
 
@@ -1898,8 +1892,6 @@ vendor/lib64/hw/android.hardware.thermal@1.0-impl.so
 vendor/lib/hw/thermal.mt6771.so
 vendor/lib64/hw/thermal.mt6771.so
 
-# Time
-
 # Vibrator
 vendor/bin/hw/android.hardware.vibrator@1.0-service
 vendor/etc/init/android.hardware.vibrator@1.0-service.rc
@@ -1908,8 +1900,26 @@ vendor/lib/hw/vibrator.default.so
 vendor/lib64/hw/android.hardware.vibrator@1.0-impl.so
 vendor/lib64/hw/vibrator.default.so
 
-# WiFi
-bin/iwpriv
+# WiFi - from full_v7101o-user 10 QP1A.190711.020 q0mp1t1v1001bsp release-keys
+bin/iwpriv|98c0afd4381d3c5e5af433447a54dc8dd9e7cd73
+vendor/bin/hw/android.hardware.wifi@1.0-service-lazy-mediatek|6925aae2b7581bb7b9a9fc49d93b3739a9a5ff63
+vendor/bin/hw/hostapd|5d9737be9f871d03d0b0df315af482e869dae7ae
+vendor/bin/hw/wpa_supplicant|867e9a7c221569cd9b876dc0ab76200d8a925d7e
+vendor/bin/hostapd_cli|2d267f7e8c00ef0d7ee6c683aa400cb176fcb25c
+vendor/bin/stp_dump3|e97b3add8c1eb62d905353961e959046fef6073f
+vendor/bin/wlan_assistant|c8b12ac856e0da3d6258e5d29a12c70ae76e3851
+vendor/bin/wmt_launcher|0558fa753936dd515d3929ba2daf30ed1b6f34de
+vendor/bin/wmt_loader|f1d4848f3035d32508d8da8b6e2dd85365844f2d
+vendor/bin/wpa_cli|c8c2c43096d344f896d4eef5b36a3ee773a524f4
+vendor/etc/init/android.hardware.wifi@1.0-service-lazy-mediatek.rc|bd3726847a0068d4e252b2d4f5c168b38b982074
+vendor/etc/init/hostapd.android.rc|0f8128bb83c4cbe80760f1a040960cfe439d2d6f
+vendor/etc/init/wlan_assistant.rc|32ed0c40b58acc747c83bf467dde7f72634e9732
+vendor/lib/libwpa_client.so|3dc5040e57ce923a96b49686bc02cf1aa7378698
+vendor/lib64/libwifitest.so|cfe5024a32f655dde2720ae91e5bc499fd52c8bb
+vendor/lib64/libwifi-hal.so:vendor/lib64/libwifi-hal-mtk.so|bdc95a83b30b68a04ed1bce171f77586e6bc7262
+vendor/lib64/libwpa_client.so|14720207104dae28a2f958dab9e0ed31825eaac0
+vendor/lib64/vendor.mediatek.hardware.wifi.supplicant@2.0.so|b71d1cac0a17c37a628dbfc806c47fec3addcca1
+vendor/lib64/vendor.mediatek.hardware.wifi.supplicant@2.1.so|4af9d9e28dac45043c140e7db8ab15a68e6a95c7
 
 # Misc
 vendor/app/mcRegistry/020f0000000000000000000000000000.drbin
@@ -1995,11 +2005,8 @@ vendor/bin/volte_imsm_93
 vendor/bin/volte_stack
 vendor/bin/volte_ua
 vendor/bin/wfca
-vendor/bin/wlan_assistant
 vendor/bin/wmt_concurrency
 vendor/bin/wmt_fdb
-vendor/bin/wmt_launcher
-vendor/bin/wmt_loader
 vendor/bin/wmt_loopback
 vendor/data/misc/ProjectConfig.mk
 vendor/etc/.tp/.ht120.mtc
@@ -2073,7 +2080,6 @@ vendor/etc/init/vendor.trustonic.tee@1.0-service.rc
 vendor/etc/init/vendor.trustonic.teeregistry@1.0-service.rc
 vendor/etc/init/vendor_engineermode.rc
 vendor/etc/init/vendor_transfer.rc
-vendor/etc/init/wlan_assistant.rc
 vendor/etc/ipsec/ipsec.conf
 vendor/etc/ipsec/ipsec.d/cacerts/Entrust.net_Certification_Authority_2048.cer
 vendor/etc/ipsec/ipsec.d/cacerts/GeoTrust_PCA_G3_Root.der
@@ -2424,7 +2430,6 @@ vendor/lib64/libvia-ril.so
 vendor/lib64/libvoh264enc.so
 vendor/lib64/libvpu.so
 vendor/lib64/libwapi.so
-vendor/lib64/libwifitest.so
 vendor/lib64/libwo.so
 vendor/lib64/lib_iir.so
 vendor/lib64/lib_speech_enh.so
