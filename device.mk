@@ -295,7 +295,8 @@ PRODUCT_PACKAGES += \
     libhidltransport \
     libhidltransport.vendor \
     libhwbinder \
-    libhwbinder.vendor
+    libhwbinder.vendor \
+    libunwindstack.vendor
 
 # WiFi
 PRODUCT_PACKAGES += \
