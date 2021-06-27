@@ -16,4 +16,4 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_CPH1859.mk
+    $(LOCAL_DIR)/aosp_CPH1859.mk
