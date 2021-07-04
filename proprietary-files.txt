@@ -54,12 +54,13 @@ vendor/lib64/libaudio_engineer_test.so
 vendor/lib64/libaudio_param_parser-vnd.so
 vendor/lib64/libtinycompress.so
 
-# Audio-Hardware - from full_v7101o-user 10 QP1A.190711.020 q0mp1t1v1001bsp release-keys
-vendor/lib/hw/audio.primary.mt6771.so|88451732bc3706d7da27d1a4a874b3d0a2d5ad9b
-vendor/lib/hw/audio.r_submix.mt6771.so|fdb5add833889e11f44d09b679257deb30bed27f
-vendor/lib/hw/audio.usb.mt6771.so|09a0a132ef22fbd3b1b4bcf052e636352702b08d
-vendor/lib64/hw/audio.r_submix.mt6771.so|361fd3735f05fcba62f4b57e4fcc145f3ad05aa7
-vendor/lib64/hw/audio.usb.mt6771.so|4bfdea0283a92062f7c524ca1f2608fa6d5a2605
+# Audio-Hardware
+vendor/lib/hw/audio.primary.mt6771.so
+vendor/lib/hw/audio.r_submix.mt6771.so
+vendor/lib/hw/audio.usb.mt6771.so
+vendor/lib64/hw/audio.primary.mt6771.so
+vendor/lib64/hw/audio.r_submix.mt6771.so
+vendor/lib64/hw/audio.usb.mt6771.so
 
 # Audio Hardware - from KF6J-user 11 RP1A.200720.011 210120V193 release-keys
 vendor/bin/hw/android.hardware.audio@5.0-service-mediatek|7d8173d321717056f1aad4ee5250cd23d0152780
