@@ -293,6 +293,7 @@
             <name>IHostapd</name>
             <instance>default</instance>
         </interface>
+        <fqname>@1.0::IHostapd/default</fqname>
         <fqname>@1.1::IHostapd/default</fqname>
     </hal>
     <hal format="hidl">
@@ -303,6 +304,8 @@
             <name>ISupplicant</name>
             <instance>default</instance>
         </interface>
+        <fqname>@1.0::ISupplicant/default</fqname>
+        <fqname>@1.1::ISupplicant/default</fqname>
         <fqname>@1.2::ISupplicant/default</fqname>
     </hal>
     <hal format="hidl">
