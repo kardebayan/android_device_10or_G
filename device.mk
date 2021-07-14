@@ -17,11 +17,16 @@
 
 # Audio
 PRODUCT_PACKAGES += \
-    android.hardware.audio.effect@5.0-impl \
-    android.hardware.audio.common@6.0-util \
-    android.hardware.soundtrigger@2.2-impl \
-    android.hardware.bluetooth.audio@2.0-impl \
+    android.hardware.audio@4.0 \
+    android.hardware.audio.effect@4.0-impl \
+    android.hardware.soundtrigger@2.1-impl
+
+PRODUCT_PACKAGES += \
     audio.a2dp.default \
+    audio.primary.default \
+    audio.r_submix.default \
+    audio.usb.default \
+    audio_policy.stub \
     libaudiopreprocessing \
     libbundlewrapper \
     libdownmix \
@@ -55,9 +60,12 @@ PRODUCT_COPY_FILES += \
 
 # Camera
 PRODUCT_PACKAGES += \
+    android.hardware.camera.device@3.3 \
+    android.hardware.camera.device@3.4 \
     android.hardware.camera.provider@2.4
 
 PRODUCT_PACKAGES += \
+    liblz4 \
     Snap
 
 # Display
@@ -75,6 +83,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.gatekeeper@1.0-service \
     android.hardware.gatekeeper@1.0-impl
+
+# GPS
+PRODUCT_PACKAGES += \
+    libandroid_net
 
 # Health
 PRODUCT_PACKAGES += \
@@ -104,13 +116,17 @@ DEVICE_PACKAGE_OVERLAYS += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/public.libraries.txt:$(TARGET_COPY_OUT_VENDOR)/etc/public.libraries.txt
 
+# Radio
+PRODUCT_PACKAGES += \
+    android.hardware.radio@1.2
+
 # RenderScript
 PRODUCT_PACKAGES += \
     android.hardware.renderscript@1.0-impl
 
 # Sensors
 PRODUCT_PACKAGES += \
-    libsensorndkbridge    
+    libsensorndkbridge
 
 # Thermal
 PRODUCT_PACKAGES += \
@@ -194,12 +210,12 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.software.midi.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.midi.xml \
     frameworks/native/data/etc/android.software.verified_boot.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.verified_boot.xml \
     frameworks/native/data/etc/handheld_core_hardware.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/handheld_core_hardware.xml
-    
-PRODUCT_COPY_FILES += \    
+
+PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/permissions/com.mediatek.op.ims.common.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/com.mediatek.op.ims.common.xml \
     $(LOCAL_PATH)/permissions/privapp-permissions-mediatek.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-mediatek.xml \
     $(LOCAL_PATH)/permissions/com.mediatek.ims.plugin.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/com.mediatek.ims.plugin.xml
-    
+
 # Misc
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/misc/factory.ini:$(TARGET_COPY_OUT_SYSTEM)/etc/factory.ini \
@@ -302,7 +318,7 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/seccomp/configstore@1.1.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/configstore@1.1.policy \
     $(LOCAL_PATH)/configs/seccomp/mediacodec.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/mediacodec.policy
 
-# BlurGang 
+# BlurGang
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     ro.sf.blurs_are_expensive=1 \
     ro.surface_flinger.supports_background_blur=1 \

@@ -1,4 +1,4 @@
-# Device proprietary files - from CPH1861EX_11_C.49, unless pinned
+# Device proprietary files - from full_oppo6771_17065-user 9 PPR1.180610.011 eng.root.20200509.060522 release-keys, unless pinned
 
 # AEE
 vendor/lib/libdirect-coredump.so
@@ -40,7 +40,6 @@ vendor/lib/libaudio_engineer_test.so
 vendor/lib/libaudio_param_parser-vnd.so
 vendor/lib/libDiracAPI_SHARED.so
 vendor/lib/libtinycompress.so
-vendor/lib/soundfx/libaudiopreprocessing.so
 vendor/lib/soundfx/libdirac.so
 vendor/lib64/libaudiocompensationfilterc.so
 vendor/lib64/libaudiocompensationfilter_vendor.so
@@ -56,30 +55,19 @@ vendor/lib64/libaudiotoolkit_vendor.so
 vendor/lib64/libaudio_engineer_test.so
 vendor/lib64/libaudio_param_parser-vnd.so
 vendor/lib64/libtinycompress.so
-vendor/lib64/soundfx/libaudiopreprocessing.so
 
 # Audio-Hardware
 vendor/bin/hw/android.hardware.audio@4.0-service-mediatek
 vendor/etc/init/android.hardware.audio@4.0-service-mediatek.rc
-vendor/lib/hw/android.hardware.audio.effect@4.0-impl.so
 vendor/lib/hw/android.hardware.audio@4.0-impl-mediatek.so
-vendor/lib/hw/audio.primary.default.so
 vendor/lib/hw/audio.primary.mt6771.so
-vendor/lib/hw/audio.r_submix.default.so
 vendor/lib/hw/audio.r_submix.mt6771.so
-vendor/lib/hw/audio.usb.default.so
 vendor/lib/hw/audio.usb.mt6771.so
-vendor/lib/hw/audio_policy.stub.so
 vendor/lib/vendor.mediatek.hardware.audio@4.1.so
-vendor/lib64/hw/android.hardware.audio.effect@4.0-impl.so
 vendor/lib64/hw/android.hardware.audio@4.0-impl-mediatek.so
-vendor/lib64/hw/audio.primary.default.so
 vendor/lib64/hw/audio.primary.mt6771.so
-vendor/lib64/hw/audio.r_submix.default.so
 vendor/lib64/hw/audio.r_submix.mt6771.so
-vendor/lib64/hw/audio.usb.default.so
 vendor/lib64/hw/audio.usb.mt6771.so
-vendor/lib64/hw/audio_policy.stub.so
 vendor/lib64/vendor.mediatek.hardware.audio@4.1.so
 
 # Bluetooth
@@ -646,14 +634,6 @@ vendor/lib64/hw/gps.default.so
 vendor/lib64/hw/vendor.mediatek.hardware.gnss@1.1-impl.so
 vendor/lib64/vendor.mediatek.hardware.gnss@1.1.so
 
-# GPS-Hardware
-
-# Gatekeeper
-vendor/bin/hw/android.hardware.gatekeeper@1.0-service
-vendor/etc/init/android.hardware.gatekeeper@1.0-service.rc
-vendor/lib/hw/android.hardware.gatekeeper@1.0-impl.so
-vendor/lib64/hw/android.hardware.gatekeeper@1.0-impl.so
-
 # Graphics
 vendor/lib/egl/egl.cfg
 vendor/lib/egl/libGLES_mali.so
@@ -661,45 +641,23 @@ vendor/lib/libOpenCL.so
 vendor/lib64/egl/libGLES_mali.so
 vendor/lib64/libOpenCL.so
 
-# Health
-vendor/bin/hw/android.hardware.health@2.0-service
-vendor/bin/hw/android.hardware.health@2.0-service.override
-vendor/etc/init/android.hardware.health@2.0-service.rc
-
 # Keymaster
-vendor/bin/hw/android.hardware.keymaster@3.0-service
 vendor/bin/hw/vendor.mediatek.hardware.keymaster_attestation@1.1-service
-vendor/etc/init/android.hardware.keymaster@3.0-service.rc
 vendor/etc/init/vendor.mediatek.hardware.keymaster_attestation@1.1-service.rc
-vendor/lib/hw/android.hardware.keymaster@3.0-impl.so
 vendor/lib/hw/libMcTeeKeymaster.so
 vendor/lib/hw/vendor.mediatek.hardware.keymaster_attestation@1.1-impl.so
 vendor/lib/libkeymaster3device.so
 vendor/lib/vendor.mediatek.hardware.keymaster_attestation@1.0.so
 vendor/lib/vendor.mediatek.hardware.keymaster_attestation@1.1.so
-vendor/lib64/hw/android.hardware.keymaster@3.0-impl.so
 vendor/lib64/hw/libMcTeeKeymaster.so
 vendor/lib64/hw/vendor.mediatek.hardware.keymaster_attestation@1.1-impl.so
 vendor/lib64/libkeymaster3device.so
-vendor/lib64/libkeystore-engine-wifi-hidl.so
-vendor/lib64/libkeystore-wifi-hidl.so
 vendor/lib64/vendor.mediatek.hardware.keymaster_attestation@1.0.so
 vendor/lib64/vendor.mediatek.hardware.keymaster_attestation@1.1.so
 
-# Lights
-vendor/bin/hw/android.hardware.light@2.0-service-mediatek
-vendor/etc/init/android.hardware.light@2.0-service-mediatek.rc
-vendor/lib/hw/android.hardware.light@2.0-impl-mediatek.so
-vendor/lib/hw/lights.mt6771.so
-vendor/lib64/hw/android.hardware.light@2.0-impl-mediatek.so
-vendor/lib64/hw/lights.mt6771.so
-
 # Listen
-vendor/lib/hw/android.hardware.soundtrigger@2.1-impl.so
 vendor/lib/hw/sound_trigger.primary.mt6771.so
 vendor/lib64/hw/sound_trigger.primary.mt6771.so
-
-# Media
 
 # Media-Hardware
 vendor/lib/libstagefrighthw.so
@@ -1893,19 +1851,11 @@ vendor/lib64/vendor.oppo.hardware.wifi.supplicant@1.0.so
 vendor/oppo/ck.fs
 vendor/oppo/recovery_rootcheck
 
-# Perf
-
-# Postprocessing
-
 # Power-Hardware
 vendor/lib/hw/power.default.so
 vendor/lib/hw/power.mt6771.so
 vendor/lib64/hw/power.default.so
 vendor/lib64/hw/power.mt6771.so
-
-# QMI
-
-# Radio
 
 # Sensors
 vendor/lib/libsensorndkbridge.so
@@ -2037,7 +1987,6 @@ vendor/bin/netdc
 vendor/bin/nvram_daemon
 vendor/bin/rpmbengclient_test
 vendor/bin/rttv
-vendor/bin/self-init
 vendor/bin/starter
 vendor/bin/stroke
 vendor/bin/TBaseDeviceBinding
@@ -2487,10 +2436,3 @@ vendor/lib64/s5k4h7_mipi_raw_IdxMgr.so
 vendor/lib64/s5k4h7_mipi_raw_tuning.so
 vendor/lib64/vendor.trustonic.tee@1.0.so
 vendor/lib64/vendor.trustonic.teeregistry@1.0.so
-vendor/res/images/lcd_test_00.png
-vendor/res/images/lcd_test_01.png
-vendor/res/images/lcd_test_02.png
-vendor/res/sound/CA2CA.ogg
-vendor/res/sound/CADetected.ogg
-vendor/res/sound/ringtone.wav
-vendor/res/sound/testpattern1.wav
