@@ -273,25 +273,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.drm@1.3-service.clearkey
 
-# GCam Go
-PRODUCT_PACKAGES += \
-    GCam
-
-# FirefoxLite
-PRODUCT_PACKAGES += \
-    FirefoxLite
-
-# QKsms
-PRODUCT_PACKAGES += \
-    qksms
-
-# Removed Packages
-PRODUCT_PACKAGES += \
-    RemovePackages \
-    RemovePackages-1 \
-    RemovePackages-2 \
-    RemovePackages-3
-
 # HIDL
 PRODUCT_PACKAGES += \
     android.hidl.manager-V1.0-java \
